@@ -8,7 +8,7 @@
   @if (userPlaces()){
     <app-places [places]="userPlaces()!"></app-places>
   }
-  @else if (userPlaces()?.length === 0){
+  @else if (userPlaces().length === 0){
     <p class="fallback-text"> No favorites</p>
   }
 </app-places-container>
